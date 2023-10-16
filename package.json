@@ -1,5 +1,5 @@
 {
-  "name": "next-on-pages-r2-local-demo",
+  "name": "next-on-pages-kv-text-local-demo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
     "pages:build": "npx @cloudflare/next-on-pages",
     "pages:deploy": "npm run pages:build && wrangler pages deploy .vercel/output/static",
     "pages:watch": "npx @cloudflare/next-on-pages@1 --watch",
-    "pages:dev": "npx wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat --kv MY_KV"
+    "pages:dev": "npx wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat --kv MY_KV --binding SECRET_KEY=my-secret-key"
   },
   "dependencies": {
     "@types/node": "20.8.3",
@@ -22,7 +22,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "https://prerelease-registry.devprod.cloudflare.dev/next-on-pages/runs/6494806633/npm-package-next-on-pages-486",
+    "@cloudflare/next-on-pages": "/Users/dario/Repos/my-repos/next-on-pages/packages/next-on-pages",
     "vercel": "^32.4.1",
     "wrangler":"^3.11.0",
     "@cloudflare/workers-types": "^4.20231002.0"

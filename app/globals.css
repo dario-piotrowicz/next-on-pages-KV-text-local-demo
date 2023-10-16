@@ -1,3 +1,7 @@
+body {
+  font-family: sans-serif;
+}
+
 ul {
   padding: 0;
 }
@@ -24,4 +28,23 @@ a.with-client-component {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+}
+
+.secret-key-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1.5rem 0.5rem;
+}
+
+.update-secret-key-value-btns {
+  margin-block-start: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+
+  & button {
+    font-size: 1rem;
+  }
 }
