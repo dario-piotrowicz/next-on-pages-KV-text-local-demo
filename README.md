@@ -1,10 +1,10 @@
-# next-on-pages R2 local demo
+# next-on-pages KV and text bindings local demo
 
-The app contains two routes:
- - `/` which displays the content of `MY_R2` only using server components
- - `/with-client-component` which also simply displays the content of `MY_R2` but it does so by passing the `R2Object`s to a client component (thus causing the objects to be serialized)
+The app contains a single route that shows the usage of a KV binding and text binding in local mode.
 
-(There's also an api route used to populate/initialize `MY_R2`)
+> **Note**
+> This is also an example on how the two can be used together with server actions to update KV values
+> based on secrets that never make it into the browser
 
 ## Steps to run the app
 
