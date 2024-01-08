@@ -1,5 +1,9 @@
 # next-on-pages KV and text bindings local demo
 
+> [!WARNING]
+> This demo is no longer relevant and has been superseded by:<br>
+> https://github.com/dario-piotrowicz/next-on-pages-stable-next-dev-test-demo
+
 The app contains a single route that shows the usage of a KV binding and text binding in local mode.
 
 > **Note**
